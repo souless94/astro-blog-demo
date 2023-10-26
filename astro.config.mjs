@@ -8,5 +8,5 @@ export default defineConfig({
 	build: {
 		format: "file",
 	  },
-	integrations: [tailwind(), sitemap()],
+	integrations: [tailwind(),pagefind(), sitemap()],
 });
