@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://https://astro-blog-demo-1fj8.onrender.com/sitemap-index.xml
