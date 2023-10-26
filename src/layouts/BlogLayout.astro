@@ -1,0 +1,31 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Search from "astro-pagefind/components/Search";
+---
+
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Astro Blog Demo</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+
+		<div class="navbar bg-base-100">
+			<a class="btn btn-ghost normal-case text-xl" href="/"
+				>Astro Blog Demo</a
+			>
+		</div>
+		<div class="hero min-h-screen bg-base-200">
+			<div class="hero-content text-center">
+				<div class="max-w-md">
+					<slot />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
